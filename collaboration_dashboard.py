@@ -17,16 +17,7 @@ if "ideasList" not in st.session_state:
 # Input fields
 userName = st.text_input("Your Name", "")
 userEmail = st.text_input("Your email","")
-technology = st.multiselect(
-    'Interested Technolgies',
-    ['Snowflake', 'AWS', 'Oracle', 'Power BI'],
-    ['Tableu', 'Azure'])
-
-st.write('You selected:', technology)
-
-
-    
-userIdea = st.text_area("Can you brief your objective and how it relates to choosen technology", "")
+userIdea = st.text_area("Your learning objectives", "")
 
 # Submit button
 if st.button("Submit"):
