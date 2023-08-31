@@ -1,9 +1,13 @@
 import streamlit as st
+from PIL import Image
 
-
-st.title("Idea Submission Form")
-st.header('Study day ideas')
-
+# FMR logo on top - will adjust align later
+st.image('https://www.fidelity.com/bin-public/060_www_fidelity_com/images/fidelity-logo-nav.png')
+# Titles and headers
+st.title("Fidelity AMT Learning Days")
+st.header('Profile and Learning Objectives Submission Form')
+st.caption('This tool will assist in finding associates with similar learning interests, enabling collaboration and the set up of study groups')
+st.subheader('Please enter your details')
 
 #init session state
 if "ideasList" not in st.session_state:
