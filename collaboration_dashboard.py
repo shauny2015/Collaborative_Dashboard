@@ -24,9 +24,7 @@ technology = st.multiselect(
 
 st.write('You selected:', technology)
 
-objective = st.radio(
-    "What's your learning objectives",
-    ["Learning:book:", "Build a own Project:laptop:", "Certification :medal:"])
+
     
 userIdea = st.text_area("Can you brief your objective and how it relates to choosen technology", "")
 
